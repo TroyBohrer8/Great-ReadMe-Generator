@@ -1,0 +1,22 @@
+{
+  "name": "great-readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TroyBohrer8/Great-ReadMe-Generator.git"
+  },
+  "author": "troy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TroyBohrer8/Great-ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/TroyBohrer8/Great-ReadMe-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
