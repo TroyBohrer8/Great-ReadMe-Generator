@@ -1,13 +1,13 @@
 # My Exciting Project
   
-  ## This project solves all problems
+  ## This project solves all world problems
 
-  ## Table of Contents (Optional)
+  ## Table of Contents 
   
-  - Installation: Download
-  - Usage: Download app, enjoy.
-  - Constribution: Run app and give new ideas
-  - Tests: indes.test.js
+  - Installation: Download and Install
+  - Usage: Install app, solve world problems
+  - Constribution: Explore through app and provide new ideas
+  - Tests: index.test.js
   - Licenses: MIT License
   ## Installation
   
