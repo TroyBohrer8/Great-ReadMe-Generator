@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const generateMarkdown = require('./generateMarkdown');
+
 
 const questions = [
   {
@@ -30,7 +32,7 @@ const questions = [
   {
     type: 'input',
     message: "What is the title of this project?",
-    name: 'project-title',
+    name: 'title',
     default: 'My Exciting Project',
     validate: function (answer) {
       if (answer.length < 1) {
@@ -88,9 +90,26 @@ function writeToFile(fileName, data) {
   });
 }
 
- const writeFileAsync = util.promisify(writeToFile);
+const writeFileAsync = util.promisify(writeToFile);
+
+async function init() {
+  try {
+
+    const userResponses = await inquirer.prompt(questions);
+    console.log("Your responses: ", userResponses);
+    console.log("Thank you for your responses!");
 
 
+    console.log("Generating your README...")
+    const markdown = generateMarkdown(userResponses);
+    console.log(markdown);
+
+    await writeFileAsync('HomeworkREADME.md', markdown);
+
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 init();
 
